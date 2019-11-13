@@ -1,4 +1,4 @@
-package crops;
+package models.crops;
 
 public class Egg {
 }

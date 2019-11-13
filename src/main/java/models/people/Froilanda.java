@@ -1,4 +1,4 @@
-package people;
+package models.people;
 
 public class Froilanda {
 }

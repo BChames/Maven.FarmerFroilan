@@ -1,4 +1,4 @@
-package animals;
+package models.animals;
 
 public class Chicken {
 }

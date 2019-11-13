@@ -1,4 +1,4 @@
-package buildings;
+package models.buildings;
 
 public class Farmhouse {
 }

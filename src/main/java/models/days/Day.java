@@ -1,4 +1,4 @@
-package days;
+package models.days;
 
 public class Day {
 }
