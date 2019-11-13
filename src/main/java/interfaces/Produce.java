@@ -1,4 +1,4 @@
 package interfaces;
 
-public class Produce {
+public interface Produce {
 }

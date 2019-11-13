@@ -1,4 +1,4 @@
 package interfaces;
 
-public class Botanist {
+public interface Botanist {
 }

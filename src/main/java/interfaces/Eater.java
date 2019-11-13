@@ -1,4 +1,5 @@
 package interfaces;
 
-public class Eater {
+public interface Eater {
+    void eat(Crop food);
 }

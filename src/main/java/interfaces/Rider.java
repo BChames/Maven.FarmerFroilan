@@ -1,4 +1,4 @@
 package interfaces;
 
-public class Rider {
+public interface Rider {
 }

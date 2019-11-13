@@ -1,4 +1,4 @@
 package interfaces;
 
-public class FarmStuff {
+public interface FarmStuff {
 }

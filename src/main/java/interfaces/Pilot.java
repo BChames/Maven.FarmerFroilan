@@ -1,4 +1,4 @@
 package interfaces;
 
-public class Pilot {
+public interface Pilot {
 }
