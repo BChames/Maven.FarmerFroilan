@@ -4,5 +4,5 @@ import interfaces.Crop;
 import java.util.List;
 
 public class CropRow {
-    private List<Crop> crops;
+    private List<? extends Crop> crops;
 }

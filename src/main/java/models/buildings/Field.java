@@ -1,8 +1,8 @@
 package models.buildings;
 
-import interfaces.Crop;
+import models.crops.CropRow;
 import java.util.Map;
 
 public class Field {
-    Map<Integer, Crop> field;
+    Map<Integer, CropRow> field;
 }
