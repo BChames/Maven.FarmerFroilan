@@ -12,7 +12,7 @@ public class Farmhouse implements FarmStuff {
     }
 
     public Boolean addToFarmhouse(Person person) {
-        return this.farmHouse.add(person);
+        return null;
     }
 
 }

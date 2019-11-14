@@ -3,6 +3,15 @@ package models.people;
 import interfaces.*;
 
 public class Froilanda implements Botanist, NoiseMaker, Eater, Rider, Person, Pilot {
+    private static final Froilanda INSTANCE = new Froilanda();
+
+    private Froilanda() {
+    }
+
+    public Froilanda wakeUp() {
+        return INSTANCE;
+    }
+
     public void operate(Vehicle vehicle) {
 
     }

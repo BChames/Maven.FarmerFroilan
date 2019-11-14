@@ -3,6 +3,11 @@ package models.people;
 import interfaces.*;
 
 public class Froilan implements Farmer, Botanist, NoiseMaker, Eater, Rider, Person {
+    private static final Froilan INSTANCE = new Froilan();
+
+    public Froilan wakeUp() {
+        return INSTANCE;
+    }
 
     public void operate(Vehicle vehicle) {
 
