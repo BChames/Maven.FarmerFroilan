@@ -1,10 +1,11 @@
 package models.buildings;
 
+import interfaces.FarmStuff;
 import models.animals.Chicken;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ChickenCoop {
+public class ChickenCoop implements FarmStuff {
     private List<Chicken> chickenCoop;
 
     public ChickenCoop() {

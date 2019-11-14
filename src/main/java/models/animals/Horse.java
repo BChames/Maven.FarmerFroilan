@@ -1,10 +1,8 @@
 package models.animals;
 
 import interfaces.*;
-import models.crops.Produce;
 
-public class Horse implements Eater, NoiseMaker {
-    private Boolean ridable = true;
+public class Horse implements Animal, Eater, NoiseMaker, Ridable {
 
     public void eat(Crop food) {
     }

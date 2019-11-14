@@ -1,4 +1,6 @@
 package models.crops;
 
-public class Tomato {
+import interfaces.*;
+
+public class Tomato implements Edible, Produce {
 }
