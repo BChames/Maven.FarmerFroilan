@@ -3,7 +3,7 @@ package models.animals;
 import interfaces.*;
 import models.crops.Egg;
 
-public class Chicken implements Animal, Eater, NoiseMaker {
+public class Chicken implements Animal, Eater, NoiseMaker, Produce {
     private Boolean hasBeenFertilized;
 
     public Chicken(Boolean hasBeenFertilized) {

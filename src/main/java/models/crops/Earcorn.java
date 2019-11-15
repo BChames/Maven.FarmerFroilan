@@ -2,5 +2,5 @@ package models.crops;
 
 import interfaces.*;
 
-public class Earcorn implements Produce, Edible {
+public class Earcorn implements Edible {
 }

@@ -1,12 +1,12 @@
 package models.crops;
 
-import interfaces.Crop;
-import interfaces.Produce;
+import interfaces.*;
 
-public class Cornstalk implements Crop {
+public class Cornstalk implements Crop, Produce {
     private Boolean hasBeenHarvested;
+    private Boolean hasBeenFertilized;
 
-    public Produce yield() {
+    public Edible yield() {
         return null;
     }
 }

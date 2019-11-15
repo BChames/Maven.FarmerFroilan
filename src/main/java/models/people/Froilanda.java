@@ -2,7 +2,7 @@ package models.people;
 
 import interfaces.*;
 
-public class Froilanda implements Botanist, NoiseMaker, Eater, Rider, Person, Pilot {
+public class Froilanda implements NoiseMaker, Eater, Rider, Person, Pilot {
     private static final Froilanda INSTANCE = new Froilanda();
 
     private Froilanda() {

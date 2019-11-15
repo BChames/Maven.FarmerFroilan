@@ -8,4 +8,8 @@ public class Tractor implements Ridable, Vehicle, NoiseMaker, FarmVehicle {
         return null;
     }
 
+    public void harvest() {
+
+    }
+
 }

@@ -4,7 +4,7 @@ import interfaces.FarmStuff;
 import java.util.List;
 
 public class Farm {
-    private List<? extends FarmStuff> farm;
+    private List<FarmStuff> farm;
 
     public Boolean addToFarm(FarmStuff farmStuff) {
         return null;
