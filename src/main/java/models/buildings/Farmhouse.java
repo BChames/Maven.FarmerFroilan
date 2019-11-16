@@ -5,16 +5,19 @@ import interfaces.Person;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Farmhouse implements FarmStuff {
+public class Farmhouse implements FarmStuff<Person> {
     private List<Person> farmHouse = new ArrayList();
 
     public Farmhouse() {
     }
 
-    public Boolean addToFarmhouse(Person person) {
+    public Boolean addFarmObject(Person person) {
         return null;
     }
 
+    public Boolean removeFarmObject(Person person) {
+        return null;
+    }
 }
 
 

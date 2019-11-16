@@ -3,16 +3,15 @@ package models.buildings;
 import interfaces.FarmStuff;
 import java.util.List;
 
-public class Farm {
+public class Farm implements FarmStuff<FarmStuff>{
     private List<FarmStuff> farm;
 
-    public Boolean addToFarm(FarmStuff farmStuff) {
-        return farm.add(farmStuff);
+
+    public Boolean addFarmObject(FarmStuff farmObject) {
+        return farm.add(farmObject);
     }
 
-    public Boolean removeFromFarm(FarmStuff farmStuff) {
-        return farm.remove(farmStuff);
+    public Boolean removeFarmObject(FarmStuff farmObject) {
+        return farm.remove(farmObject);
     }
-
-
 }

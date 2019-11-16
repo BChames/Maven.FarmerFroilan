@@ -5,22 +5,24 @@ import models.animals.Horse;
 
 import java.util.List;
 
-public class Stable implements FarmStuff {
+public class Stable implements FarmStuff<Horse> {
     List<Horse> horses;
 
     public Stable(Horse... horses) {
 
     }
 
-    public Boolean addHorse(Horse horse) {
-        return null;
-    }
-
-    public Boolean removeHorse(Horse horse) {
-        return null;
-    }
 
     public Boolean removeMultipleHorses(Integer numberOfHorses) {
         return null;
     }
+
+    public Boolean addFarmObject(Horse horse) {
+        return null;
+    }
+
+    public Boolean removeFarmObject(Horse horse) {
+        return null;
+    }
+
 }
