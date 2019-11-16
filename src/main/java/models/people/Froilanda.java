@@ -1,9 +1,12 @@
 package models.people;
 
 import interfaces.*;
+import java.util.List;
 
 public class Froilanda implements NoiseMaker, Eater, Rider, Person, Pilot {
     private static final Froilanda INSTANCE = new Froilanda();
+    private List<Edible> stomach;
+
 
     private Froilanda() {
     }

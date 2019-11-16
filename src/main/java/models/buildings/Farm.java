@@ -7,11 +7,11 @@ public class Farm {
     private List<FarmStuff> farm;
 
     public Boolean addToFarm(FarmStuff farmStuff) {
-        return null;
+        return farm.add(farmStuff);
     }
 
     public Boolean removeFromFarm(FarmStuff farmStuff) {
-        return null;
+        return farm.remove(farmStuff);
     }
 
 
