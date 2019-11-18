@@ -19,6 +19,7 @@ public class Froilan implements Farmer, Botanist, NoiseMaker, Eater, Rider, Pers
 
     public void mount(Ridable ridable) {
 
+
     }
 
     public void dismount() {

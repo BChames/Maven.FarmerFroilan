@@ -11,5 +11,9 @@ public class Cropduster implements Vehicle, Ridable, Aircraft, NoiseMaker, FarmV
     public String makeNoise() {
         return null;
     }
+    public void setMounted(Boolean x){
+        this.mounted = x;
+
+    }
 
 }
