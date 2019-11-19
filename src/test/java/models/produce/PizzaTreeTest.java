@@ -1,4 +1,4 @@
-package models.crops;
+package models.produce;
 
 public class PizzaTreeTest {
 }
