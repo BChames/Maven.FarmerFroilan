@@ -2,31 +2,37 @@ package models.people;
 
 import interfaces.*;
 import models.crops.CropRow;
+
 import java.util.List;
 
 public class Froilan implements Farmer, Botanist, NoiseMaker, Eater, Rider, Person {
     private static final Froilan INSTANCE = new Froilan();
     private List<Edible> stomach;
-    Boolean mounted;
+    private Boolean mounted;
+    private Ridable ridingOn;
+
 
     public Froilan wakeUp() {
         return INSTANCE;
-    }
-
-    public void operate(Vehicle vehicle) {
 
     }
 
     public void mount(Ridable ridable) {
         setMounted(true);
+        setRidingOn(ridable);
     }
 
     public void dismount() {
         setMounted(false);
+        setRidingOn(null);
     }
 
-    public void setMounted(Boolean mounted) {
-        this.mounted = mounted;
+    public void setMounted(Boolean mountStatus) {
+        mounted = mountStatus;
+    }
+
+    public void setRidingOn(Ridable ridingOn) {
+        this.ridingOn = ridingOn;
     }
 
     public void eat(Edible food) {
@@ -47,4 +53,7 @@ public class Froilan implements Farmer, Botanist, NoiseMaker, Eater, Rider, Pers
         return null;
     }
 
+    public void operate(Vehicle vehicle) {
+
+    }
 }

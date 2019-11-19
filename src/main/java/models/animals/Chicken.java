@@ -22,8 +22,8 @@ public class Chicken implements Animal, Eater, NoiseMaker, Produce {
         return new Egg();
     }
 
-    public void eat(Crop produce) {
-        this.stomach.add( Edible.class.cast(produce) );
+    public void eat(Edible produce) {
+        this.stomach.add(produce);
     }
 
     public Boolean getHasBeenFertilized() {
