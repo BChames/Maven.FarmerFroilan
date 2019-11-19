@@ -1,12 +1,14 @@
 package models.buildings;
 
 import models.crops.CropRow;
+import java.util.HashMap;
 import java.util.Map;
 
 public class Field {
-    Map<Integer, CropRow> field;
+    private Map<Integer, CropRow> field;
 
     public Field() {
+        this.field = new HashMap();
     }
 
     public CropRow addToField(Integer row, CropRow cropRow) {
