@@ -40,8 +40,8 @@ public class Froilan implements Farmer, Botanist, NoiseMaker, Eater, Rider, Pers
 
     }
 
-    public Boolean plant(Crop crop, CropRow cropRow) {
-        cropRow.addToCropRow(crop);
+    public Boolean plant(Produce produce, CropRow cropRow) {
+        cropRow.addToCropRow(produce);
         return true;
     }
 
