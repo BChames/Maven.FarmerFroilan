@@ -1,6 +1,7 @@
-package models.crops;
+package models.produce;
 
 import interfaces.Edible;
+import models.crops.Pizza;
 
 public class PizzaTree {
     private Boolean hasBeenHarvested;

@@ -10,6 +10,10 @@ public class Cornstalk implements Crop, Produce {
         return null;
     }
 
+    public Boolean offFertilize() {
+        return null;
+    }
+
     public Edible yield() {
         return null;
     }
