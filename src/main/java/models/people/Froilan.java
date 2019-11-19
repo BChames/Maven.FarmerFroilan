@@ -7,7 +7,7 @@ import java.util.List;
 public class Froilan implements Farmer, Botanist, NoiseMaker, Eater, Rider, Person {
     private static final Froilan INSTANCE = new Froilan();
     private List<Edible> stomach;
-
+    Boolean mounted;
 
     public Froilan wakeUp() {
         return INSTANCE;
@@ -18,27 +18,33 @@ public class Froilan implements Farmer, Botanist, NoiseMaker, Eater, Rider, Pers
     }
 
     public void mount(Ridable ridable) {
-
-
+        setMounted(true);
     }
 
     public void dismount() {
-
+        setMounted(false);
     }
 
-    public void eat(Crop food) {
+    public void setMounted(Boolean mounted) {
+        this.mounted = mounted;
+    }
+
+    public void eat(Edible food) {
+        stomach.add(food);
 
     }
 
     public Boolean plant(Crop crop, CropRow cropRow) {
-        return null;
+        cropRow.addToCropRow(crop);
+        return true;
     }
 
     public String makeNoise() {
-        return null;
+        return "I'm too old for this...";
     }
 
     public String ride() {
         return null;
     }
+
 }
