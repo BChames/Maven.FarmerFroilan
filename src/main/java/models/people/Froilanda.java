@@ -33,6 +33,11 @@ public class Froilanda implements NoiseMaker, Eater, Rider, Person, Pilot {
         setRidingOn(null);
     }
 
+    public void fly(){
+
+
+    }
+
     public void setMounted(Boolean mountStatus) {
         mounted = mountStatus;
     }
