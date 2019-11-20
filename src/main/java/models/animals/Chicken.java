@@ -18,13 +18,6 @@ public class Chicken implements Animal, Eater, NoiseMaker, Produce {
         return "cluck cluck I'm a chicken";
     }
 
-    public Boolean getFertilized() {
-    }
-
-    public Boolean offFertilize() {
-        return null;
-    }
-
     public Egg yield() {
         return new Egg();
     }
@@ -35,6 +28,10 @@ public class Chicken implements Animal, Eater, NoiseMaker, Produce {
 
     public Boolean getHasBeenFertilized() {
         return hasBeenFertilized;
+    }
+
+    public void setHasBeenFertilized(Boolean hasBeenFertilized) {
+        this.hasBeenFertilized = hasBeenFertilized;
     }
 
     public List<Edible> getStomach() {
