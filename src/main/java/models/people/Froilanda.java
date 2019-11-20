@@ -42,8 +42,7 @@ public class Froilanda implements NoiseMaker, Eater, Rider, Person, Pilot {
     }
 
     public void fly(Aircraft aircraft) {
-
-
+        
     }
 
 //    public void eat(Crop food) {
