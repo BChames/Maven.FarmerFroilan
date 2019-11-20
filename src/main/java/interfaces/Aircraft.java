@@ -1,4 +1,5 @@
 package interfaces;
 
-public class Aircraft {
+public interface Aircraft {
+    final Boolean canBeFlown = true;
 }

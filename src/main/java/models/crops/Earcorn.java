@@ -1,4 +1,6 @@
 package models.crops;
 
-public class Earcorn {
+import interfaces.*;
+
+public class Earcorn implements Edible {
 }

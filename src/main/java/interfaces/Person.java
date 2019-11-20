@@ -1,4 +1,5 @@
 package interfaces;
 
-public class Person {
+public interface Person {
+    //is this necessary?
 }

@@ -1,4 +1,4 @@
 package models.crops;
 
-public class Produce {
+public class EggTest {
 }

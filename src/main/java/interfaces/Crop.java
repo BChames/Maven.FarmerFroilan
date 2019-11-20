@@ -1,4 +1,7 @@
 package interfaces;
 
-public class Crop {
+public interface Crop {
+
 }
+
+

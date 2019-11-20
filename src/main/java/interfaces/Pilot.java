@@ -1,4 +1,5 @@
 package interfaces;
 
-public class Pilot {
+public interface Pilot {
+    void fly(Aircraft aircraft);
 }

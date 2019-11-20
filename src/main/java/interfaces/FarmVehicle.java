@@ -1,4 +1,7 @@
 package interfaces;
 
-public class FarmVehicle {
+import models.buildings.Farm;
+
+public interface FarmVehicle {
+    Boolean canOperateOnFarm = true;
 }

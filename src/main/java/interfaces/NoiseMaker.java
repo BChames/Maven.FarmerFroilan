@@ -1,4 +1,5 @@
 package interfaces;
 
-public class NoiseMaker {
+public interface NoiseMaker {
+    String makeNoise();
 }

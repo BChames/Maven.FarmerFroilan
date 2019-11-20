@@ -1,4 +1,5 @@
 package interfaces;
 
-public class Farmer {
+public interface Farmer {
+    void operate(Vehicle vehicle);
 }

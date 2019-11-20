@@ -1,4 +1,10 @@
 package interfaces;
 
-public class Produce {
+import com.sun.org.apache.xpath.internal.operations.Bool;
+
+public interface Produce {
+
+    Boolean getFertilized();
+    Boolean offFertilize();
+    Edible yield();
 }

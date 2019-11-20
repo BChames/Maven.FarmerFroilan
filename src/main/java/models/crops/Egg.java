@@ -1,4 +1,6 @@
 package models.crops;
 
-public class Egg {
+import interfaces.Edible;
+
+public class Egg implements Edible {
 }

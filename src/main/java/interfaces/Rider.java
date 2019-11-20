@@ -1,4 +1,7 @@
 package interfaces;
 
-public class Rider {
+public interface Rider {
+    void mount(Ridable ridable);
+    void dismount();
+    String ride();
 }
