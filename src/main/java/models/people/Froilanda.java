@@ -19,9 +19,9 @@ public class Froilanda implements NoiseMaker, Eater, Rider, Person, Pilot {
         return INSTANCE;
     }
 
-    public void operate(Vehicle vehicle) {
-
-    }
+//    public void operate(Vehicle vehicle) {
+//
+//    }
 
     public void mount(Ridable ridable) {
         setMounted(true);
@@ -33,11 +33,6 @@ public class Froilanda implements NoiseMaker, Eater, Rider, Person, Pilot {
         setRidingOn(null);
     }
 
-    public void fly(){
-
-
-    }
-
     public void setMounted(Boolean mountStatus) {
         mounted = mountStatus;
     }
@@ -47,7 +42,7 @@ public class Froilanda implements NoiseMaker, Eater, Rider, Person, Pilot {
     }
 
     public void fly(Aircraft aircraft) {
-
+        setMounted(true);
     }
 
 //    public void eat(Crop food) {
@@ -60,12 +55,12 @@ public class Froilanda implements NoiseMaker, Eater, Rider, Person, Pilot {
     }
 
     public String makeNoise() {
-        return "My husband is too old for me....";
+        return "My brother is a trash farmer....";
 
     }
 
     public String ride() {
-        return null;
+        return "Vroom vroom";
     }
 
     public void eat(Edible food) {
