@@ -10,6 +10,14 @@ public class TomatoPlant implements Crop, Produce {
     public TomatoPlant() {
     }
 
+    public Boolean getFertilized() {
+        return null;
+    }
+
+    public Boolean offFertilize() {
+        return null;
+    }
+
     public Edible yield() {
         return new Tomato();
     }
@@ -28,5 +36,9 @@ public class TomatoPlant implements Crop, Produce {
 
     public Boolean getHasBeenFertilized() {
         return hasBeenFertilized;
+    }
+
+    public void Fertilize() {
+
     }
 }

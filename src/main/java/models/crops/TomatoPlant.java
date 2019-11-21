@@ -16,6 +16,6 @@ public class TomatoPlant implements Crop, Produce {
 
 
     public Edible yield() {
-        return null;
+        return new Tomato();
     }
 }

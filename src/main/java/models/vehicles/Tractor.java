@@ -1,6 +1,7 @@
 package models.vehicles;
 
 import interfaces.*;
+import models.buildings.Silo;
 
 public class Tractor implements Ridable, Vehicle, NoiseMaker, FarmVehicle {
     Rider rider;
@@ -17,9 +18,10 @@ public class Tractor implements Ridable, Vehicle, NoiseMaker, FarmVehicle {
         return null;
     }
 
-    public void harvest(Produce produce) {
+    public void harvest(Produce produce, Silo silo) {
         if (this.rider != null){
-            produce.yield();
+            silo.addEdible(produce.yield());
+
         }
 
     }

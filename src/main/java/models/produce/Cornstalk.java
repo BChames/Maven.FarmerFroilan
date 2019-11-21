@@ -29,4 +29,8 @@ public class Cornstalk implements Crop, Produce {
     public void setHasBeenFertilized(Boolean hasBeenFertilized) {
         this.hasBeenFertilized = hasBeenFertilized;
     }
+
+    public void Fertilize() {
+
+    }
 }

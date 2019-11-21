@@ -46,4 +46,8 @@ public class Froilanda implements NoiseMaker, Eater, Rider, Person, Pilot {
     public String ride() {
         return null;
     }
+
+    public void eat(Edible food) {
+
+    }
 }
