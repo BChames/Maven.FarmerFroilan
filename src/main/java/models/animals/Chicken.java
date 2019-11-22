@@ -2,12 +2,11 @@ package models.animals;
 
 import interfaces.*;
 import models.crops.Egg;
-
-import java.util.List;
+import java.util.ArrayList;
 
 public class Chicken implements Animal, Eater, NoiseMaker, Produce {
     private Boolean hasBeenFertilized;
-    private List<Edible> stomach;
+    ArrayList<Edible> stomach = new ArrayList<Edible>();
 
     public Chicken(Boolean hasBeenFertilized) {
         this.hasBeenFertilized = hasBeenFertilized;
@@ -18,20 +17,23 @@ public class Chicken implements Animal, Eater, NoiseMaker, Produce {
         return "cluck cluck I'm a chicken";
     }
 
-
     public Egg yield() {
         return new Egg();
     }
 
-    public void eat(Edible produce) {
-        this.stomach.add(produce);
+    public void eat(Edible food) {
+        this.stomach.add(food);
     }
 
     public Boolean getHasBeenFertilized() {
         return hasBeenFertilized;
     }
 
-    public List<Edible> getStomach() {
+    public void setHasBeenFertilized(Boolean hasBeenFertilized) {
+        this.hasBeenFertilized = hasBeenFertilized;
+    }
+
+    public ArrayList<Edible> getStomach() {
         return this.stomach;
     }
 }

@@ -1,6 +1,7 @@
 package models.people;
 
 import interfaces.*;
+import models.animals.Horse;
 import models.crops.CropRow;
 
 import java.util.ArrayList;
@@ -19,14 +20,14 @@ public class Froilan implements Farmer, Botanist, NoiseMaker, Eater, Rider, Pers
     }
 
     public void mount(Ridable ridable) {
-        setMounted(true);
         setRidingOn(ridable);
     }
 
     public void dismount() {
-        setMounted(false);
         setRidingOn(null);
     }
+
+
 
     public void setMounted(Boolean mountStatus) {
         mounted = mountStatus;
@@ -53,11 +54,20 @@ public class Froilan implements Farmer, Botanist, NoiseMaker, Eater, Rider, Pers
         return stomach.size();
     }
 
-    public String ride() {
-        return null;
+
+    public String ride(Horse horse, Integer minutes) {
+        mount(horse);
+        horse.setRideTimeMinutes(horse.getRideTime()+minutes);
+        dismount();
+        return "Froilan rode " + horse.getName() +" for " + minutes +" minutes.";
     }
 
     public void operate(Vehicle vehicle) {
 
     }
+    public void feed(Horse horse, Edible edible){
+        for (int i = 0; i < 3; i++) {
+            horse.eat(edible);
+    }
+}
 }

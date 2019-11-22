@@ -9,7 +9,6 @@ public class Tractor implements Ridable, Vehicle, NoiseMaker, FarmVehicle {
     public Tractor(){
 
     }
-
     public Tractor(Rider rider){
         this.rider=rider;
     }
