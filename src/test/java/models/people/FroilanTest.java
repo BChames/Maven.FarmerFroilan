@@ -1,11 +1,10 @@
-package models.People;
+package models.people;
 
 import models.animals.Horse;
 import models.buildings.Field;
 import models.buildings.Silo;
 import models.buildings.Stable;
 import models.crops.*;
-import models.people.Froilan;
 import models.produce.PizzaTree;
 import models.vehicles.Tractor;
 import org.junit.Assert;
