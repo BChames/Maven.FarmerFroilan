@@ -16,6 +16,8 @@ public class FroilanTest {
     CropRow cropRow, cropRow2, cropRow3;
     Stable stable;
 
+
+    //this maybe needs to be an @Before if they are being used later on
     @Test
     public void setUp() {
         this.froilan = Froilan.wakeUp();

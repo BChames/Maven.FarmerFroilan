@@ -10,4 +10,8 @@ public class Cornstalk implements Crop, Produce {
     public Edible yield() {
         return new Earcorn();
     }
+
+    public void Fertilize() {
+
+    }
 }

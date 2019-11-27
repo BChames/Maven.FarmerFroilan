@@ -38,4 +38,5 @@ public class Horse implements Animal, Eater, NoiseMaker, Ridable {
     public void setRideTimeMinutes(int rideTimeMinutes) {
         this.rideTimeMinutes = rideTimeMinutes;
     }
+
 }

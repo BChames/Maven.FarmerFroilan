@@ -9,7 +9,7 @@ public class HorseTest {
     @Test
     public void makeNoiseTest(){
 
-        Horse testHorse = new Horse();
+        Horse testHorse = new Horse("Horsey");
 
         String expected = "Neigh neighhhhhh I'm a horse";
         String actual = testHorse.makeNoise();
@@ -21,7 +21,7 @@ public class HorseTest {
     public void eatTest(){
 
         Earcorn cornTest = new Earcorn();
-        Horse testHorse = new Horse();
+        Horse testHorse = new Horse("Horsey");
 
         testHorse.eat(cornTest);
 

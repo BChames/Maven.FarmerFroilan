@@ -1,10 +1,13 @@
 package models.people;
 
 import interfaces.*;
+import models.animals.Horse;
 import models.crops.CropRow;
+import models.vehicles.Cropduster;
+
 import java.util.List;
 
-public class Froilanda implements NoiseMaker, Eater, Rider, Person, Pilot {
+public class Froilanda extends Cropduster implements NoiseMaker, Eater, Rider, Person, Pilot {
     private static final Froilanda INSTANCE = new Froilanda();
     private List<Edible> stomach;
     private Boolean mounted;
@@ -22,6 +25,7 @@ public class Froilanda implements NoiseMaker, Eater, Rider, Person, Pilot {
 //
 //    }
 
+
     public void mount(Ridable ridable) {
         setMounted(true);
         setRidingOn(ridable);
@@ -32,12 +36,16 @@ public class Froilanda implements NoiseMaker, Eater, Rider, Person, Pilot {
         setRidingOn(null);
     }
 
-    public void setMounted(Boolean mountStatus) {
+    private void setMounted(Boolean mountStatus) {
         mounted = mountStatus;
     }
 
-    public void setRidingOn(Ridable ridingOn) {
+    private void setRidingOn(Ridable ridingOn) {
         this.ridingOn = ridingOn;
+    }
+
+    public Ridable getRidingOn(){
+        return ridingOn;
     }
 
     public void fly(Aircraft aircraft) {
@@ -66,5 +74,25 @@ public class Froilanda implements NoiseMaker, Eater, Rider, Person, Pilot {
     stomach.add(food);
     }
 
+    public Integer howFull(){
+        return stomach.size();
+    }
 
+    public void feed(Horse horse, Edible edible) {
+        for (int i = 0; i < 3; i++) {
+            horse.eat(edible);
+        }
+    }
+
+    public String ride(Horse horse, Integer minutes) {
+        mount(horse);
+        horse.setRideTimeMinutes(horse.getRideTime()+minutes);
+        dismount();
+        return "Froilanda rode " + horse.getName() +" for " + minutes +" minutes.";
+    }
+
+
+    public boolean getMounted() {
+        return mounted;
+    }
 }

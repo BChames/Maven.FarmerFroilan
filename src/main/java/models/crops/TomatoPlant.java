@@ -18,4 +18,8 @@ public class TomatoPlant implements Crop, Produce {
     public Edible yield() {
         return new Tomato();
     }
+
+    public void Fertilize() {
+
+    }
 }
