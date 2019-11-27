@@ -2,7 +2,6 @@ package models.people;
 
 import interfaces.*;
 import models.crops.CropRow;
-
 import java.util.List;
 
 public class Froilanda implements NoiseMaker, Eater, Rider, Person, Pilot {

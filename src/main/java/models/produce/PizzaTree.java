@@ -1,9 +1,11 @@
 package models.produce;
 
+import interfaces.Crop;
 import interfaces.Edible;
+import interfaces.Produce;
 import models.crops.Pizza;
 
-public class PizzaTree {
+public class PizzaTree implements Crop, Produce {
     private Boolean hasBeenHarvested;
     private Boolean hasBeenFertilized;
 
@@ -28,5 +30,9 @@ public class PizzaTree {
 
     public Boolean getHasBeenFertilized() {
         return this.hasBeenFertilized;
+    }
+
+    public void Fertilize() {
+
     }
 }

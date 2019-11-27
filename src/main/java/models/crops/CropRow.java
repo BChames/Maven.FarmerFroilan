@@ -21,4 +21,8 @@ public class CropRow {
     public void addToCropRow(Crop crop) {
         cropRow.add(crop);
     }
+    public Integer cropRowSize(){
+
+        return cropRow.size();
+    }
 }
